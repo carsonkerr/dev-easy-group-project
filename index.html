@@ -1,19 +1,64 @@
+
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>easy-project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golf Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Classroom Facts</a>
+        <ul class="navbar-nav">
+          <!-- search bar -->
+          <li class="input" ><input id="searchBar" onkeyup="search_fact()" 
+            type="text" name="search" placeholder="Search.."></li>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!-- HTML code here -->
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
 
-</body>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              target="_blank"
+              href="https://github.com/ReedWillis/dev-easy-group-project"
+              >Source Code</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Wireframe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Validity Checker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">Wave</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="gameRow" class="row">
+      <div class="col-sm-4 mx-auto mt-5">
+        <div class="card">
+          <div class="card-body">My random fact is that I have two brothers"</div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Like</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="scripts/fact.js"></script>
+    <script src="scripts/card-script.js"></script>
+  </body>
 </html>

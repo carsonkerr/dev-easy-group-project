@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="styles/style.css">
+
   </head>
   <body class="container-fluid">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -42,6 +43,9 @@
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="#">Wave</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">RESET</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -50,29 +54,25 @@
     <div class="col-sm-6">
     <div id="random">
         <h4>Random Fact: </h4>
-
-    </div>
-  </div>
-
-  <div class="col-sm-6">
-    <div id="liked">
-        <h4>Liked: </h4>
-
     </div>
   </div>
   </div>
 
 
-    <div id="gameRow" class="row">
+    <div id="first" class="row">
       <div class="col-sm-4 mx-auto mt-5">
         <div class="card">
-          <div class="card-body">My random fact is that I have two brothers"</div>
-          <div class="card-footer">
-            <button class="btn btn-primary">Like</button>
+          <div class="card-body">Sort by:</div>
+          <div class="btn-group btn-group-lg"> </div> 
+            <button onclick="alpha_sorted()"type="button" class="btn btn-outline-success">Alpha</button >
+            <button onclick="reverse_sorted()"type="button" class="btn btn-outline-success">Reverse</button>
+            <button onclick="random_sorted()"type="button" class="btn btn-outline-success">Random</button>
+          </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>

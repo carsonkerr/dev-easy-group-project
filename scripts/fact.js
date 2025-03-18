@@ -1,4 +1,5 @@
 const facts = [
+    { fact: "My random fact is that I have two brothers"},
     { fact: "My fav color is purple." },
     { fact: "I like to swim" },
     { fact: "I broke my finger" },
@@ -24,8 +25,7 @@ const facts = [
     { fact: "I have eaten 1 pound of ground beef every day for the last 6 months." },
     { fact: "Still very less parking space in UNA" },
     { fact: "I enjoy kickboxing" },
-    { fact: "classroom user 27" },
-    { fact: "classroom user 28" },
-    { fact: "Random: I built the Eiffel Tower" },
-    
+    { fact: "🦭🦭" },
+    { fact: "I built the Eiffel Tower." },
   ];
+

@@ -2,12 +2,10 @@ $(function () {
     console.log("ready!");
   
     $.each(facts, (index, data) => {
-      $("#gameRow").append(`
+      $("#first").append(`
       <div class="col-sm-4 mx-auto mt-5">
           <div class="card">
             <div class="card-body">${facts[index].fact}</div>
-            <div class="card-footer">
-              <button class="btn btn-primary">Like</button>
             </div>
           </div>
         </div>
@@ -47,3 +45,47 @@ $("#random").append(`
   </div>
 </div>
 `);
+
+// function alpha_sorted() {
+//   const alphaSorted = facts.sort((a, b) => a.fact.localeCompare(b.fact));
+//   const outputDiv = document.getElementById("first");
+//   outputDiv.innerHTML = facts.map(fact => `<p>${fact.fact}</p>`).join('');
+// }
+
+// function reverse_sorted() {
+//   const reverseAlphaSorted = facts.sort((a, b) => b.fact.localeCompare(a.fact));
+// }
+
+// function random_sorted() {
+//   const randomSorted = facts.sort(() => Math.random() - 0.5); 
+// }
+
+
+function alpha_sorted() {
+  const alphaSorted = facts.sort((a, b) => a.fact.localeCompare(b.fact));
+  renderFacts(alphaSorted);
+}
+
+function reverse_sorted() {
+  const reverseAlphaSorted = facts.sort((a, b) => b.fact.localeCompare(a.fact));
+  renderFacts(reverseAlphaSorted);
+}
+
+function random_sorted() {
+  const randomSorted = facts.sort(() => Math.random() - 0.5);
+  renderFacts(randomSorted);
+}
+
+function renderFacts(sortedFacts) {
+  const outputDiv = document.getElementById("first");
+  outputDiv.innerHTML = '';
+  sortedFacts.forEach(fact => {
+    outputDiv.innerHTML += `
+      <div class="col-sm-4 mx-auto mt-5">
+        <div class="card">
+          <div class="card-body">${fact.fact}</div>
+        </div>
+      </div>
+    `;
+  });
+}

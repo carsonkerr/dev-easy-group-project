@@ -12,6 +12,7 @@ $(function () {
           </div>
         </div>
         `);
+
     });
 
 
@@ -35,3 +36,14 @@ $(function () {
 // Got this ^^^^ from https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
 
 }
+
+const random = Math.floor(Math.random() * facts.length);
+
+$("#random").append(`
+<div class="col-sm-4 mx-auto mt-5">
+  <div class="card">
+    <div class="card-body">${facts[random].fact}</div>
+    </div>
+  </div>
+</div>
+`);

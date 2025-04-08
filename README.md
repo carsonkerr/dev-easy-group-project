@@ -1,8 +1,12 @@
-# dev-easy-group-project
-Easy group 3 working on a fact for all students in the class
+# Dev Easy Project
+## The group that worked on this was Carson Kerr, Reed Willis, Tatum Duthu, and Cohen Cantrell
 
-https://www.w3schools.com/js/js_arrays.asp
-#
-https://www.w3schools.com/howto/howto_css_searchbar.asp
+<details> 
+  <summary>Attribution for search feature</summary>
+  <p>https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/</p>
+  <p>https://www.w3schools.com/js/js_arrays.asp</p>
+  <p>https://www.w3schools.com/howto/howto_css_searchbar.asp</p>
+</details>
 
-# The group that worked on this was Carson Kerr, Reed Willis, Tatum Duthu, and Cohen Cantrell
+Here is a code snippet from the project that is the search feature!
+https://github.com/carsonkerr/dev-easy-group-project/blob/855182b442ab6371de20a31ab8683ebb4f895276/scripts/card-script.js#L20-L32

@@ -2,7 +2,7 @@
 ## The group that worked on this was Carson Kerr, Reed Willis, Tatum Duthu, and Cohen Cantrell
 
 <details> 
-  <summary>Attribution for search feature</summary>
+  <summary>Attribution</summary>
   <p>https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/</p>
   <p>https://www.w3schools.com/js/js_arrays.asp</p>
   <p>https://www.w3schools.com/howto/howto_css_searchbar.asp</p>
